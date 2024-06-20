@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/style.css">
     <title>Freelancer</title>
 </head>
 <body>
-    
+    <header>
+        <div class="soon">
+            <h2>&lt;Danilo&gt</h2>
+        </div>
+        <div class="container">
+            <ul>
+                <li>Trabalhos</li>
+                <li>Blog</li>
+                <li>Sobre</li>
+            </ul>
+            <button class="contact-btn">
+                <p>Contato</p>
+            </button>
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()">
+            &#9776;
+        </button>
+    </header>
+    <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+    <nav id="mobile-menu" class="mobile-menu">
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
+        <ul>
+            <li>Projetos</li>
+            <li>Blog</li>
+            <li>Sobre</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <article>
+                <h1 class="title">Converta Visitantes <span class="no-wrap">em <span class="gradient">Clientes</span></span></h1>
+                <h2>Simplifique formulários longos e complexos para entrar em contato para um único clique. </h2>
+                <div class="btn-home">
+                    <button><a href="">
+                        <p>Contato</p>
+                    </a>
+                    <img src="/icons/mg-coin.svg" alt="">
+                </button>
+            </article>
+
+            <div class="home">
+                <img class="mobile" src="/img/mobile.png" alt="">
+            </div>
+        </section>
+        
+    </main>
+    <script src="/scripts/menu.js"></script>
 </body>
 </html>

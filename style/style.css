@@ -1,0 +1,132 @@
+:root{
+    --background: #F7F7F7;
+    --text: #171717;
+    --start-color: #1ec0b2;
+    --end-color: #4cfd43;
+    --rectangle-width: 10%;
+}
+
+body{
+    background: var(--background) ;
+}
+
+#home{
+    height: calc(100vh - 4rem);
+    display: flex;
+}
+
+article{
+    width: 54%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: clamp(0.7rem, 3vw, 3rem);
+    padding-right: clamp(0.7rem, 3vw, 3rem);
+    margin-bottom: clamp(1rem, 5vw, 3rem);
+}
+
+.home{
+    width: 46%;
+    background-image: url(/img/fundo.svg);
+    background-repeat: no-repeat, repeat;
+    background-size: cover;  
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    margin: 0rem;
+    justify-content: end;
+}
+
+.title{
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: clamp(2.25rem, 4.8vw + 1.5rem,5rem);
+}
+
+.no-wrap{
+    white-space: nowrap;
+}
+
+.gradient{
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, var(--start-color), var(--end-color));
+}
+
+article h2{
+    margin-top: 0.5rem;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.btn-home button{
+    display: flex;
+    align-items: center;
+    padding-right: clamp(1rem,1.5rem,2rem);
+    padding-left: clamp(1rem,1.5rem,2rem);
+    padding-top: clamp(0.1rem,0.4rem,0.5rem);
+    padding-bottom: clamp(0.1rem,0.4rem,0.5rem);
+    border-radius: 5rem;
+    background-image: linear-gradient(to right, var(--start-color), var(--end-color));
+    border: none;
+    cursor: pointer;
+    margin: 1.3rem 0rem;
+}
+
+.btn-home a{
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.btn-home img{
+    height: 2rem;
+    width: 2rem;
+    padding-left:clamp(0.5rem,0.5rem,1rem);
+}
+
+.home img{
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    width: clamp(20rem, 40%, 28em);
+    height: 28rem;
+
+}
+
+
+@media (max-width: 1340px){
+    body{
+        background: rgb(255, 227, 176);
+    }
+}
+
+@media (max-width: 1024px) {
+    body{
+        background: rgb(231, 255, 166);
+    }
+}
+
+@media (max-width: 769px){
+    body{
+        background: rgb(244, 255, 143);
+    }
+}
+
+@media (max-width: 601px){
+    body{
+        background: rgb(219, 255, 227);
+    }
+}
+
+@media (max-width: 480px) {
+
+    body{
+        background: rgb(255, 215, 234);
+    }
+}
