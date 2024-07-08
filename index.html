@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/header.css">
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style/slide.css">
     <title>Freelancer</title>
 </head>
 <body>
@@ -41,7 +42,7 @@
             <article>
                 <h1 class="title">Converta Visitantes <span class="no-wrap">em <span class="gradient">Clientes</span></span></h1>
                 <h2>Simplifique formulários longos e complexos para entrar em contato para um único clique. </h2>
-                <div class="btn-home">
+                <div class="btn btn-home">
                     <button><a href="">
                         <p>Contato</p>
                     </a>
@@ -53,8 +54,132 @@
                 <img class="mobile" src="/img/mobile.png" alt="">
             </div>
         </section>
+
+        <section id="benefits">
+            <div class="subheading">
+                <h2>Principais <span class="gradient">Benefícios</span></h2>
+            </div>
+            <article>
+                <div class="two-cards">
+                    <div class="card">
+                        <img src="/icons/mg-coin.svg" alt="">
+                        <h3>Conversão Simples</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.<p>
+                    </div>
+                    <div class="card">
+                        <img src="/icons/mg-coin.svg" alt="">
+                        <h3>SEO Otimizado</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.<p>
+                    </div>
+                </div>
+                <div class="two-cards"></div>
+            </article>
+        </section>
+
+        <section id="link-page">
+            <div class="subheading">
+                <h2>Página de <span class="gradient">Links</span></h2>
+            </div>
+            <div class="container">
+                <article>
+                    <h3 class="title2"><span class="gradient">Turbine</span> Suas <span class="no-wrap">Redes Sociais</span></h3>
+                    <p class="text">Centralize todas as redes sociais e informações relevantes em uma única página.</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                    <p class="alert">* Recurso pago à parte.</p>
+                    <div class="btn btn-benefits">
+                        <button><a href="">
+                            <p>Demonstração</p>
+                        </a>
+                        <img src="/icons/mg-coin.svg" alt="">
+                     </button>
+                    </div>
+                </article>
+                <div class="img">
+                    <img src="/img/cel3.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+        <section id="works">
+            <div class="subheading">
+                <h2>Trabalhos <span class="gradient">Selecionados</span></h2>
+            </div>
+            <div class="works2">
+                <article class="container2">
+                    <div class="work">
+                        <h2 class="job-name">Amore</h2>
+                        <h2 class="job-title">Aplicação de embalagens com realidade aumentada</h2>
+                    </div>
+                </article>
+                <div class="slideshow-container">
+                    <button class="prev" onclick="changeSlide(-1)"><p>&#10094;</p></button>
+                    <button class="next" onclick="changeSlide(1)"><p>&#10095;</p></button>
+                    <div class="slides">
+                        <img src="/img/image1.JPG" class="slide">
+                        <img src="/img/image2.png" class="slide">
+                        <img src="/img/image3.JPG" class="slide">
+                    </div>
+                    <div class="dots-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pay">
+            <div class="subheading">
+                <h2>Selecione o <span class="gradient">Pacote</span></h2>
+            </div>
+
+            <div class="center">
+                <div class="center-switch">
+                    <div class="switch">
+                        <button id="with-host" class="active" onclick="switchButton('with')">Com Hospedagem</button>
+                        <button id="without-host" onclick="switchButton('without')">Sem Hospedagem</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="packs">    
+                <article class="pack">
+                    <div class="name">Pacote Simples</div>
+                    <p class="info">Apenas a página de links</p>
+                    <h3 class="price">R$ 200,00</h3>
+                    <div class="btn price-btn">
+                        <button><a href="">
+                            <p>Contratar</p>
+                        </a>
+                        <img src="/icons/mg-coin.svg" alt="">
+                     </button>
+                    </div>
+                    <div class="resources">
+                        <h5>Recursos do Plano</h5>
+                        <div class="item">
+                            <div class="container3">
+                                <img class="correct" src="/icons/checked.svg" alt="">
+                                <p>Uma LaindPage</p>
+                            </div>
+                            <button class="doubt">?</button>
+                        </div>
+                        <div class="item">
+                            <div class="container3"><img class="incorrect" src="/icons/x.svg" alt="">                            <p>LaindPage LaindPage </p>
+                            </div>
+                            <button class="doubt">?</button>
+                        </div>
+                    </div>
+
+
+                </article>
+            </div>
+
+        </section>
         
     </main>
     <script src="/scripts/menu.js"></script>
+    <script src="/scripts/slideshow.js"></script>
+    <script src="/scripts/switch.js"></script>
 </body>
 </html>
